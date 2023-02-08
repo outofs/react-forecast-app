@@ -11,8 +11,8 @@ const ForecastItem = ({ dayData }) => {
         alt="weather icon"
         className="w__icon"
       />
-      <div className="temp">Night {dayData.temp.night}&#176;C</div>
-      <div className="temp">Day {dayData.temp.day}&#176;C</div>
+      <div className="temp">Night {Math.round(dayData.temp.night)}&#176;C</div>
+      <div className="temp">Day {Math.round(dayData.temp.day)}&#176;C</div>
     </div>
   );
 };

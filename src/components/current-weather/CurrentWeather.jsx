@@ -19,8 +19,10 @@ const CurrentWeather = ({ weatherData }) => {
               <div className="day">
                 {window.moment(day.dt * 1000).format("ddd")}
               </div>
-              <div className="temp">Night - {day.temp.night}&#176;C</div>
-              <div className="temp">Day - {day.temp.day}&#176;C</div>
+              <div className="temp">
+                Night {Math.round(day.temp.night)}&#176;C
+              </div>
+              <div className="temp">Day {Math.round(day.temp.day)}&#176;C</div>
             </div>
           </div>
           <div className="current__others" id="current__weather__items">
